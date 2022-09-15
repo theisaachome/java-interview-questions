@@ -1,0 +1,10 @@
+/.metadata/
+.DB_Store
+.settings
+
+
+/bin
+/.classpath
+/.project
+/.settings
+/target
