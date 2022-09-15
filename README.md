@@ -147,3 +147,473 @@ Scanner console = new Scanner(System.in);
 
 }
 ```
+
+---
+
+## Question 7
+
+### Write a program that reads a set of integers, and then prints the sum of the even and odd integers.
+
+```java
+import java.util.Scanner;
+public class ReadSetIntegers{
+public static void main(String[] args){
+        Scanner console = new Scanner(System.in);
+        int number;
+        char choice;
+        int evenSum = 0;
+        int oddSum = 0;
+        do
+        {
+            System.out.print("Enter the number ");
+            number = console.nextInt();
+
+            if( number % 2 == 0)
+            {
+                evenSum += number;
+            }
+            else
+            {
+                oddSum += number;
+            }
+
+            System.out.print("Do you want to continue y/n? ");
+            choice = console.next().charAt(0);
+
+        }while(choice=='y' || choice == 'Y');
+
+        System.out.println("Sum of even numbers: " + evenSum);
+        System.out.println("Sum of odd numbers: " + oddSum);
+    }
+
+}
+```
+
+---
+
+## Question 8
+
+### Write a program that prompts the user to input a positive integer. It should then output a message indicating whether the number is a prime number.
+
+```java
+import java.util.Scanner;
+
+public class TestPrime
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int number;
+
+        System.out.print("Enter the positive integer ");
+        number = console.nextInt();
+
+        boolean flag = true;
+
+        for(int i = 2; i < number; i++)
+	{
+	    if(number % i == 0)
+            {
+                flag = false;
+                break;
+            }
+        }
+
+	if(flag && number > 1)
+        {
+            System.out.println("Number is prime");
+        }
+	else
+        {
+            System.out.println("Number is not prime");
+        }
+
+    }
+}
+```
+
+---
+
+## Question 9
+
+### Write a program to calculate HCF of Two given number.
+
+```java
+import java.util.Scanner;
+
+public class FindHcf
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int dividend, divisor;
+        int remainder, hcf = 0;
+
+        System.out.print("Enter the first number ");
+        dividend = console.nextInt();
+
+        System.out.print("Enter the second number ");
+        divisor = console.nextInt();
+
+        do
+	{
+            remainder = dividend % divisor;
+
+            if(remainder == 0)
+            {
+                hcf = divisor;
+            }
+	    else
+            {
+                dividend = divisor;
+                divisor = remainder;
+	    }
+
+        }while(remainder != 0);
+
+        System.out.println("HCF: " + hcf);
+    }
+}
+```
+
+---
+
+## Question 10
+
+### Write a do-while loop that asks the user to enter two numbers. The numbers should be added and the sum displayed. The loop should ask the user whether he or she wishes to perform the operation again. If so, the loop should repeat; otherwise it should terminate.
+
+```java
+import java.util.Scanner;
+
+public class SumAgain
+{
+public static void main(String[] args)
+{
+Scanner console = new Scanner(System.in);
+
+        int number1, number2;
+        char choice;
+
+        do
+        {
+            System.out.print("Enter the first number ");
+            number1 = console.nextInt();
+
+            System.out.print("Enter the second number ");
+            number2 = console.nextInt();
+
+            int sum = number1 + number2;
+            System.out.println("Sum of numbers: " + sum);
+
+            System.out.print("Do you want to continue y/n? ");
+            choice = console.next().charAt(0);
+
+            System.out.println();
+
+        }while(choice=='y' || choice == 'Y');
+    }
+
+}
+```
+
+---
+
+## Question 11
+
+### Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered.
+
+```java
+import java.util.Scanner;
+
+
+public class CountNumbers
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int number,
+            countPositive = 0,
+            countNegative = 0,
+            countZero = 0;
+
+        char choice;
+
+        do
+        {
+            System.out.print("Enter the number ");
+            number = console.nextInt();
+
+            if(number > 0)
+            {
+                countPositive++;
+            }
+            else if(number < 0)
+            {
+                countNegative++;
+            }
+            else
+            {
+                countZero++;
+            }
+
+            System.out.print("Do you want to continue y/n? ");
+            choice = console.next().charAt(0);
+
+        }while(choice=='y' || choice == 'Y');
+
+        System.out.println("Positive numbers: " + countPositive);
+        System.out.println("Negative numbers: " + countNegative);
+        System.out.println("Zero numbers: " + countZero);
+    }
+}
+```
+
+---
+
+## Question 12
+
+### Write a program to enter the numbers till the user wants and at the end the program should display the largest and smallest numbers entered.
+
+```java
+import java.util.Scanner;
+public class FindMaxMin
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int number;
+        int max = Integer.MIN_VALUE;  // Intialize max with minimum value
+        int min = Integer.MAX_VALUE;  // Intialize min with maximum value
+
+        char choice;
+
+        do
+        {
+            System.out.print("Enter the number ");
+            number = console.nextInt();
+
+            if(number > max)
+            {
+                max = number;
+            }
+
+            if(number < min)
+            {
+                min = number;
+            }
+
+            System.out.print("Do you want to continue y/n? ");
+            choice = console.next().charAt(0);
+
+        }while(choice=='y' || choice == 'Y');
+
+        System.out.println("Largest number: " + max);
+        System.out.println("Smallest number: " + min);
+    }
+}
+```
+
+---
+
+## Question 13
+
+### Write a program to print out all Armstrong numbers between 1 and 500. If sum of cubes of each digit of the number is equal to the number itself, then the number is called an Armstrong number.
+
+```
+For example, 153 = ( 1 _ 1 _ 1 ) + ( 5 _ 5 _ 5 ) + ( 3 _ 3 _ 3 )
+
+```
+
+```java
+public class ArmstrongNumber
+{
+    public static void main(String[] args)
+    {
+        int digit1,  // To hold first digit (Ones) of number
+            digit2,  // To hold second digit (Tens) of number
+            digit3;  // To hold third digit (Hundreds) of number
+
+	for(int number = 1; number <= 500; number++)
+	{
+            int temp = number;
+	    digit1 = temp % 10;
+
+            temp = temp / 10;
+            digit2 = temp % 10;
+
+            temp = temp / 10;
+            digit3 = temp % 10;
+
+	    if(digit1*digit1*digit1 + digit2*digit2*digit2 + digit3*digit3*digit3 == number)
+            {
+	        System.out.println(number);
+            }
+	}
+    }
+}
+```
+
+---
+
+## Question 14
+
+### Write a program to print Fibonacci series of n terms where n is input by user :
+
+0 1 1 2 3 5 8 13 24 .....
+
+```java
+import java.util.Scanner;
+
+public class FibonacciSeries
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int number;  // To hold number of terms
+
+        int firstTerm = 0,
+            secondTerm = 1,
+            thirdTerm;
+
+        System.out.print("Enter number of terms of series : ");
+        number = console.nextInt();
+
+        System.out.print(firstTerm + " " + secondTerm + " ");
+
+        for(int i = 3; i <= number; i++)
+	{
+            thirdTerm = firstTerm + secondTerm;
+            System.out.print(thirdTerm + " ");
+            firstTerm = secondTerm;
+            secondTerm = thirdTerm;
+	}
+    }
+}
+```
+
+---
+
+## Question 15
+
+## Write a program to calculate the sum of following series where n is input by user.
+
+1 + 1/2 + 1/3 + 1/4 + 1/5 +…………1/n
+
+```java
+import java.util.Scanner;
+
+public class SumOfSeries
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int number;  // To hold number of terms
+
+        double sum = 0;
+
+        System.out.print("Enter number of terms of series : ");
+        number = console.nextInt();
+
+        for(int i = 1; i <= number; i++)
+	{
+            sum += 1.0/i;
+	}
+
+        System.out.println("sum: " + sum);
+    }
+}
+```
+
+---
+
+## Question 16
+
+### Compute the natural logarithm of 2, by adding up to n terms in the series
+
+1 - 1/2 + 1/3 - 1/4 + 1/5 -... 1/n
+where n is a positive integer and input by user.
+
+```java
+import java.util.Scanner;
+
+public class Ln2
+{
+public static void main(String[] args)
+{
+Scanner console = new Scanner(System.in);
+
+        int number;  // To hold number of terms
+
+        System.out.print("Enter number of terms of series : ");
+        number = console.nextInt();
+
+        double sum = 0;
+        int sign = 1;
+
+        for(int i = 1; i <= number; i++)
+    {
+            sum += (1.0 * sign) / i;
+            sign *= -1;
+    }
+
+        System.out.println("log2: " + sum);
+    }
+
+}
+
+```
+
+---
+
+## Question 17
+
+### Write a program that generates a random number and asks the user to guess what the number is. If the user's guess is higher than the random number, the program should display "Too high, try again." If the user's guess is lower than the random number, the program should display "Too low, try again." The program should use a loop that repeats until the user correctly guesses the random number.
+
+```java
+import java.util.Scanner;
+
+public class GuessMyNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+
+        int number, // To hold the random number
+            guess,  // To hold the number guessed by user
+            tries = 0; // To hold number of tries
+
+        number = (int) (Math.random() * 100) + 1; // get random number between 1 and 100
+
+        System.out.println("Guess My Number Game");
+        System.out.println();
+
+        do
+        {
+            System.out.print("Enter a guess between 1 and 100 : ");
+            guess = console.nextInt();
+
+            tries++;
+
+        if (guess > number)
+        {
+            System.out.println("Too high! Try Again");
+        }
+        else if (guess < number)
+        {
+            System.out.println("Too low! Try Again");
+        }
+        else
+        {
+	    System.out.println("Correct! You got it in " + tries + " guesses!");
+        }
+
+        }while (guess != number);
+    }
+}
+```
