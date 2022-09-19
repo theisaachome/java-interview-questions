@@ -51,7 +51,7 @@ public class Main {
 }
 ```
 
-### Example 3: Program to print half pyramid using alphabets
+### Example 3: Program to print half pyramid using f
 
 ```
 A
@@ -135,9 +135,11 @@ int rows = 5;
 }
 ```
 
-### Programs to display pyramid and inverted pyramid using \_ and digits
+---
 
-### Example 6: Program to print full pyramid using \_
+## Example 6: Program to print full pyramid using \_
+
+### Programs to display pyramid and inverted pyramid using \_ and digits
 
 ```
         *
