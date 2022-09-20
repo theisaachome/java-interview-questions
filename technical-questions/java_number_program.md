@@ -1,7 +1,8 @@
 ## Table of Content
 
 - [Reverse Number ](#question-1-reverse-a-number-in-java)
-- []()
+- [Automorphic Number ](#question-2-what-is-an-automorphic-number)
+- [Sunny Number](#question-3-sunny-number-in-java)
 
 ## Question 1: Reverse a Number in Java
 
@@ -49,7 +50,7 @@ public class ReverseNumberProgram {
 
 ---
 
-## What is an automorphic number?
+## Question 2: What is an automorphic number?
 
 A number is called an automorphic number if and only if the square of the given number ends with the same number itself.
 
@@ -91,3 +92,82 @@ public class AutomorphicProgram {
 	}
 }
 ```
+
+---
+
+## Question 3: Sunny Number in Java
+
+### Sunny Number
+
+A number is called a sunny number if the number next to the given number is a perfect square.
+
+In other words, a number N will be a sunny number if N+1 is a perfect square.
+
+Let's understand it through an example.
+
+### Sunny Number Example
+
+Suppose, we have to check if 80 is a sunny number or not.
+
+Given, N=80 then N+1 will be 80+1=81, which is a perfect square of the number 9. Hence 80 is a sunny number.
+
+Let's take another number 10.
+
+Given, N=10 then N+1 will be 10+1=11, which is not a perfect square. Hence 10 is not a sunny number.
+
+### Steps to Find Sunny Number
+
+The logic is very simple. To find the sunny number, we need only to check whether N+1 is the perfect square or not.
+
+- Read or initialize a number (num).
+- Add 1 to the given number i.e. num+1.
+- Find the square root of num+1.
+- If the square root is an integer, the given number is sunny, else not a sunny number.
+- Let's implement the above steps in a Java program.
+
+```java
+public class SunnyNumberProgram {
+	static void isSunnyNumber(int num) {
+		if (isPerfectSquare(num + 1)) {
+			System.out.println("The given number is a sunny number.");
+		} else {
+			System.out.println("The given Number is not a sunny number.");
+		}
+	}
+	private static boolean isPerfectSquare(int num) {
+		double sqare_root = Math.sqrt(num);
+		return (sqare_root - (Math.floor(sqare_root)) == 0);
+	}
+}
+```
+
+Find Sunny Betwee 2 inputs numbers
+
+```
+#Example
+Enter lower range: 1
+Enter upper range: 1000
+The Sunny number from 1 to 1000 are:
+```
+
+```java
+public SunnyProgram{
+static void findSunnyNumbers() {
+		int start = 0, end = 0;
+		System.out.println("Enter Number Between :");
+		System.out.print("From ");
+		start = sc.nextInt();
+		System.out.print("To ");
+		end = sc.nextInt();
+		for (int i = start; i <= end; i++) {
+			if(isSunny(i))System.out.println(i);
+		}
+	}
+
+	private static boolean isSunny(int i) {
+	  return (Math.sqrt(i+1)%1==0)? true:false;
+	}
+}
+```
+
+---
