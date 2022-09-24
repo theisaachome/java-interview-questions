@@ -1,0 +1,11 @@
+package com.isaachome.practice;
+
+public class FibonacciProgram {
+
+	public static void main(String[] args) {
+		printFibonacciProgram(10);
+	}
+	static void printFibonacciProgram(int count) {
+		 
+	}
+}

@@ -1,0 +1,10 @@
+package com.isaachome.practice;
+
+public class PyramidPatternPractice {
+	public static void main(String[] args) {
+		printPyramid(5);
+	}
+	static void printPyramid(int row) {
+		
+	}
+}

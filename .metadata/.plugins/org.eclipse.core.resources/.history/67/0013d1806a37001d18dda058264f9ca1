@@ -1,0 +1,15 @@
+package com.isaachome.practice;
+
+public class PrimeCheckProgram {
+	public static void main(String[] args) {
+		int i,m , flag=0;
+		int n =3; // number to be check.
+		m=n/2;
+		if(n==0||n==1) {
+			System.out.println(n+" is not prime number");    
+		}else {
+			
+		}
+		
+	}
+}

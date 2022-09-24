@@ -1,0 +1,8 @@
+package com.isaachome.printnumber;
+
+public class ReadSetIntergers {
+	public static void main(String[] args) {
+		int evenSum=0;
+		int oddSum=0;
+	}
+}

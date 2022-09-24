@@ -1,0 +1,14 @@
+package com.isaachome.numberprogram;
+
+import java.util.Scanner;
+
+public class MainApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		// reverse number 
+		// get the remainder
+		System.out.print("Enter numbers : ");
+		int inputs = sc.nextInt();
+	}
+	
+}

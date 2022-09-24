@@ -1,0 +1,22 @@
+package com.isaachome.numberprogram;
+
+public class AutomorphicProgram {
+
+	public static void main(String[] args) {
+		System.out.println(isAutomorphic(76) ? "Automorphic" : "Not Automorphic");   
+	}
+	static boolean isAutomorphic(int num) {
+		// get Square of the num
+		int square = num * num;
+		while(num>0) {
+			//find the remainder (last digit) of the variable num and square and comparing them  
+			if(num%10 != square%10) {
+				return false;
+			}
+			//reduce num and square by dividing them by 10  
+			num = num/10;
+			square /= 10; 
+		}
+		return true;
+	}
+}

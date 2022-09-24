@@ -1,0 +1,20 @@
+package com.isaachome.practice;
+
+import java.util.Scanner;
+
+public class MainPracticeApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		int base,power;
+		System.out.print("Enter Base :\n");
+		base = sc.nextInt();
+		System.out.print("Enter Power : \n");
+		power=sc.nextInt();
+		
+		int result=1;
+		for(int i=1;i<=power;i++) {
+			result *=base;
+		}
+		System.out.format("%d power %d : %d\n",base,power,result);
+	}
+}

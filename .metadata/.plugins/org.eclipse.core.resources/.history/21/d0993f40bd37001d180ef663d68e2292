@@ -1,0 +1,23 @@
+package com.isaachome.practice;
+
+public class PalindromeProgram {
+	public static void main(String[] args) {
+		checkPalindrome(101);
+	}
+	static void checkPalindrome(int inputNumbs) {
+		// accept the number variable to be checked for palindrome  
+		int temp=inputNumbs;
+		int remainder=0;
+		int reverse = 0;
+		while(temp>0) {
+			remainder = temp % 10;//
+			reverse = (reverse*10)+remainder;
+			temp /=10;
+		}
+		if(inputNumbs==reverse) {
+			 System.out.println("palindrome number ");    
+		}else {
+			System.out.println("not palindrome");    
+		}
+	}
+}

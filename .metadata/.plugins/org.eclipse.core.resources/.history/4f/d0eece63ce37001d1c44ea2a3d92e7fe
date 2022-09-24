@@ -1,0 +1,19 @@
+package com.isaachome.numberprogram;
+
+public class ReverseNumberProgram {
+	public static void main(String[] args) {
+		inverseNumber(0);
+	}
+	static void inverseNumber(int inputNums) {
+		int temp=inputNums;
+		int reverse =0;
+		
+		while(temp >0) {
+			// get the last digit from inputNums
+			temp=temp%10;
+			reverse = reverse*10 +
+			// delete the last digit
+			temp/=10;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+package com.isaachome.numberprogram;
+
+import java.util.Scanner;
+
+public class MainApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		// reverse number 
+		// get the remainder
+		int remainder=0;
+		int reverseNum=0;
+		System.out.print("Enter numbers : ");
+		int inputs = sc.nextInt();
+		boolean isNegative = inputs<0? true:false;
+		if(inputs<0) {
+			inputs = inputs*-1;
+		}
+		while(inputs>0) {
+			remainder = inputs %10;
+			reverseNum = reverseNum*10 + remainder;
+			inputs/=10;
+		}
+	}
+	
+}

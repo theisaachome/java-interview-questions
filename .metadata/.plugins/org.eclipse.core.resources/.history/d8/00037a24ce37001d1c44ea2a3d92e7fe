@@ -1,0 +1,15 @@
+package com.isaachome.numberprogram;
+
+public class ReverseNumberProgram {
+	public static void main(String[] args) {
+		
+	}
+	static void inverserNumber(int inputNums) {
+		int temp=inputNums;
+		int reverse =0;
+		
+		while(temp >0) {
+			
+		}
+	}
+}

@@ -1,0 +1,14 @@
+package com.isaachome.practice;
+
+import java.util.Scanner;
+
+public class MainPracticeApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		int inputNum,evenNum=0,oddNum=0;
+		char choice;
+		do {
+			
+		} while (condition);
+	}
+}

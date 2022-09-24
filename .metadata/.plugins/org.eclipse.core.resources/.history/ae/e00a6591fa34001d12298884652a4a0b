@@ -1,0 +1,19 @@
+package com.isaachome.practice;
+
+import java.util.Scanner;
+
+public class MainPracticeApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		int inputNum,evenNum=0,oddNum=0;
+		char choice;
+		do {
+			System.out.print("Enter Number :");
+			if(inputNum%2==0) {
+				
+			}
+			System.out.println("Would like to Continue ? yes/no");
+			choice =sc.next().charAt(0);
+		} while (choice =='y'|| choice =='Y');
+	}
+}

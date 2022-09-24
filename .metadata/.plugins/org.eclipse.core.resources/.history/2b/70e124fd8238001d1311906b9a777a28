@@ -1,0 +1,23 @@
+package com.isaachome.numberprogram;
+
+import java.util.Scanner;
+
+public class MainApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		// reverse number 
+		// get the remainder
+		System.out.print("Enter numbers : ");
+		int inputs = sc.nextInt();
+
+		boolean isNegative = inputNums<0? true:false;
+		int temp=inputs;
+		if(inputs<0) {
+			inputs = inputs*-1;
+		}
+		while(temp>0) {
+			
+		}
+	}
+	
+}

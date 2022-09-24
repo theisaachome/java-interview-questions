@@ -1,0 +1,8 @@
+package com.isaachome.printnumber;
+
+public class FactorialDemo1 {
+
+	public static void main(String[] args) {
+		
+	}
+}

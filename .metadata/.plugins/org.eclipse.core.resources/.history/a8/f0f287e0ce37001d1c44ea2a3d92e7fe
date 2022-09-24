@@ -1,0 +1,20 @@
+package com.isaachome.numberprogram;
+
+public class ReverseNumberProgram {
+	public static void main(String[] args) {
+		inverseNumber(12345);
+	}
+	static void inverseNumber(int inputNums) {
+		int temp=inputNums;
+		int reverse =0;
+		int remainder=0;
+		while(temp >0) {
+			// get the last digit from inputNums
+			temp=inputNums%10;
+			reverse = reverse*10 +remainder;
+			// delete the last digit
+			temp/= 10;
+		}
+		System.out.println(reverse);
+	}
+}

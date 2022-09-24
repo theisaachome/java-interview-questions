@@ -1,0 +1,24 @@
+package com.isaachome.practice;
+
+public class MainPatternPracticeApp {
+	public static void main(String[] args) {
+		printRightTriangleWithNumbers(5);
+	}
+	static void printRightTriangleWithStars(int rows) {
+		// outer loop for row
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	static void printRightTriangleWithNumbers(int rows) {
+		for(int i=0;i<=rows;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(j+ " ");
+			}
+			System.out.println();
+		}
+	}
+}

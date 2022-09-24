@@ -1,0 +1,13 @@
+package com.isaachome.practice;
+
+public class PalindromeProgram {
+	public static void main(String[] args) {
+		
+	}
+	static void checkPalindrome(int inputNumbs) {
+		int temp=inputNumbs;
+		while(n>0) {
+			
+		}
+	}
+}

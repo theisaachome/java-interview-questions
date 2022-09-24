@@ -1,0 +1,16 @@
+package com.isaachome.numberprogram;
+
+public class ReverseNumberProgram {
+	public static void main(String[] args) {
+		inverseNumber(12345);
+	}
+	static void inverseNumber(int inputNums) {
+		// get last digit from input using % operator
+
+		// reverse * 10 + remainder
+		// remove the last digit 
+		while(inputNums>0) {
+			
+		}
+	}
+}

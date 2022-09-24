@@ -1,0 +1,12 @@
+package com.isaachome.practice;
+
+import java.util.Scanner;
+
+public class MainPracticeApp {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		int inputNum;
+		System.out.print("Enter Number :");
+		inputNum = sc.nextInt();
+	}
+}

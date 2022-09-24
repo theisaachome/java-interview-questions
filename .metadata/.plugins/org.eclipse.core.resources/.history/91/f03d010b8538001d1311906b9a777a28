@@ -1,0 +1,14 @@
+package com.isaachome.numberprogram;
+
+public class SunnyNumberProgram {
+
+	public static void main(String[] args) {
+	}
+	
+	static void isSunnyNumber(int num) {
+		
+	}
+	private static void findPerfectSquare(int num) {
+		
+	}
+}

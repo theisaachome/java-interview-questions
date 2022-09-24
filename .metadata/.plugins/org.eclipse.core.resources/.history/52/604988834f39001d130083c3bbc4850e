@@ -1,0 +1,14 @@
+package com.isaachome.numberprogram;
+
+import java.util.Scanner;
+
+public class BuzzProgram {
+
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+	}
+	static boolean checkNumber(int num) {
+		
+	}
+}

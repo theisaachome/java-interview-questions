@@ -1,0 +1,9 @@
+package com.isaachome.printnumber;
+
+public class FindHcf {
+	public static void main(String[] args) {
+		int dividend, divisor;
+		
+	}
+	
+}

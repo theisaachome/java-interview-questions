@@ -1,0 +1,20 @@
+package com.isaachome.numberprogram;
+
+public class AutomorphicProgram {
+
+	public static void main(String[] args) {
+		
+	}
+	static boolean isAutomorphic(int num) {
+		// get Square of the num
+		int square = num * num;
+		
+		while(num>0) {
+			//find the remainder (last digit) of the variable num and square and comparing them  
+			if(num%10 != square%10) {
+				return false;
+			}
+		}
+		return true;
+	}
+}

@@ -1,0 +1,10 @@
+package com.isaachome.printnumber;
+
+import java.util.Scanner;
+
+public class TestPrime {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		boolean flag=false;
+	}
+}

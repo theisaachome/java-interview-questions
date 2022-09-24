@@ -1,0 +1,7 @@
+package com.isaachome.printnumber;
+
+public class ReadSetIntergers {
+	public static void main(String[] args) {
+		
+	}
+}
