@@ -1,7 +1,0 @@
-package com.isaachome.practice;
-
-public class MainPatternPracticeApp {
-	public static void main(String[] args) {
-		
-	}
-}

@@ -1,8 +1,0 @@
-package com.isaachome.numberprogram;
-
-public class BuzzProgram {
-
-	public static void main(String[] args) {
-		
-	}
-}

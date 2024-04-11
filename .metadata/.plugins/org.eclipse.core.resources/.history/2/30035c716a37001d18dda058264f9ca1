@@ -1,9 +1,0 @@
-package com.isaachome.practice;
-
-public class PrimeCheckProgram {
-	public static void main(String[] args) {
-		int i,m , flag=0;
-		int n =3;
-		
-	}
-}

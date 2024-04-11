@@ -76,6 +76,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/isaachome/workspace/java-workspace/java-interview-questions/java-questions"/>
 			<item value="/Users/isaachome/workspace/java-workspace/spring-src/min-lwin-spring-code/api/balance-api"/>
 		</list>
 		<list key="projectNameTemplate">
