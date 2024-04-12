@@ -6,7 +6,7 @@ import static java.lang.Math.abs;
 
 public class SquaredSortedArray {
     public static void main(String[] args) {
-      var result= sortedSquaredArray(new int[]{ 1, 2, 3, 5, 6, 8, 9});
+      var result= sortedSquaredArray2(new int[]{ -3, -2, -1});
         Arrays.stream(result).forEach(System.out::print);
     }
     public static int[] sortedSquaredArray(int[] array) {
@@ -24,5 +24,13 @@ public class SquaredSortedArray {
             }
         }
         return sortedArray;
+    }
+    public static int[] sortedSquaredArray2(int[] array) {
+        // Write your code here.
+        int[] sortedArray =new int[array.length];
+        for(int i=0; i<array.length ;i++){
+            sortedArray[i]=array[i]*array[i];
+        }
+        return Arrays.stream(sortedArray).sorted().toArray();
     }
 }
