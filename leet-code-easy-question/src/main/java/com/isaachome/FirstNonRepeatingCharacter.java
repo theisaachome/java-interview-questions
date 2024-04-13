@@ -1,13 +1,10 @@
 package com.isaachome;
-
-import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class FirstNonRepeatingCharacter {
     public static void main(String[] args) {
-        System.out.println(  findNonRepeatedCharacter("abcdcaf"));
+        System.out.println(  findNonRepeatedCharacter2("abcdcaf"));
     }
     public  static int findNonRepeatedCharacter(String string){
         Map<Character,Integer> indexes = new LinkedHashMap<>();
@@ -21,9 +18,23 @@ public class FirstNonRepeatingCharacter {
         }
         for(Map.Entry<Character,Integer> entry: indexes.entrySet()){
              if(!entry.getValue().equals(-1)){
-                 return  entry.getKey();
+                 return  entry.getValue();
              }
         }
      return  -1;
+    }
+    public  static int findNonRepeatedCharacter2(String string){
+
+        var foundDuplicateChar = false;
+        for(int i =0;i<string.length();i++){
+           for(int j=0; j<string.length();j++){
+               if(string.charAt(i) == string.charAt(j) && i !=j){
+                   foundDuplicateChar = true;
+               }
+           }
+           if (!foundDuplicateChar)return i;
+        }
+
+        return  -1;
     }
 }
