@@ -1,4 +1,4 @@
-package com.isaachome;
+package com.isaachome.leetcode;
 
 import java.util.Arrays;
 

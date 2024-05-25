@@ -1,6 +1,4 @@
-package com.isaachome;
-
-import java.util.ArrayList;
+package com.isaachome.leetcode;
 import java.util.Arrays;
 import java.util.List;
 
