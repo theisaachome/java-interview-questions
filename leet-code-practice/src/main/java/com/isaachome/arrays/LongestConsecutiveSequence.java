@@ -13,6 +13,7 @@ public class LongestConsecutiveSequence {
         for(int n:nums){
             numSet.add(n);
         }
+
         for(int num: numSet){
             if(!numSet.contains(num-1)){
                 int length=1;
