@@ -26,4 +26,5 @@ public class MergeTwoSortedLinkedList {
         }
         return newnode.next;
     }
+
 }

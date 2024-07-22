@@ -55,4 +55,9 @@ public class ListNode {
 //        linkLast(head,100);
         linkAtIndex(head,100,2);
     }
+
+    @Override
+    public String toString() {
+        return String.format("ListNode {val=%s, next=%s}", val, next);
+    }
 }
