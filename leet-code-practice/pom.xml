@@ -5,9 +5,12 @@
   <groupId>com.isaachome</groupId>
   <artifactId>leet-code-practice</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>leet-code-practice</name>
+  <modules>
+    <module>slide-window</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
