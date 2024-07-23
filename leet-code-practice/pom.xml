@@ -10,6 +10,7 @@
   <name>leet-code-practice</name>
   <modules>
     <module>slide-window</module>
+    <module>linked-list</module>
   </modules>
 
   <properties>
