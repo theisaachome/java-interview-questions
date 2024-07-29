@@ -11,11 +11,14 @@
   <modules>
     <module>slide-window</module>
     <module>linked-list</module>
-      <module>playground</module>
+    <module>playground</module>
+    <module>two-pointer</module>
   </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
   </properties>
 
   <dependencies>
