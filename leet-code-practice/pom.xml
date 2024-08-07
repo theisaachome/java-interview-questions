@@ -13,6 +13,7 @@
     <module>linked-list</module>
     <module>playground</module>
     <module>two-pointer</module>
+      <module>arrays</module>
   </modules>
 
   <properties>
