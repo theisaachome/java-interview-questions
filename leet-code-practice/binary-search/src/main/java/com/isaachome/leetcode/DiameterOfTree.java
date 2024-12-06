@@ -10,7 +10,9 @@ public class DiameterOfTree {
     public int diameterOfBinaryTree(TreeNode root) {
         if (root == null) return 0;
 
+        // to keep track of the high of each node
         Map<TreeNode,Integer> map = new HashMap<>();
+
         Stack<TreeNode> stack = new Stack<>();
         int diameter = 0;
         if(root !=null) stack.push(root);
